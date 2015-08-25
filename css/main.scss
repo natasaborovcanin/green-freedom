@@ -41,8 +41,8 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-    "../_sass/base",
-    "../_sass/layout",
-    "../_sass/syntax-highlighting",
-    "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap"
+"base",
+"layout",
+"syntax-highlighting",
+"../bower_components/bootstrap-sass/assets/stylesheets/bootstrap"
 ;

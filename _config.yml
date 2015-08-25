@@ -3,11 +3,14 @@ title: Green Freedom -OpenCart theme faramework
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Nesto nakenjama aaaa. i ne, sta ga koji kut toliko odradjuje aj sada. da vidimo
-baseurl: "/green-freedom" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 twitter_username: natasaborovcan2
 github_username:  natasaborovcanin
 
 # Build settings
 markdown: kramdown
+
+
+
 
