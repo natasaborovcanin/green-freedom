@@ -64,6 +64,7 @@ In the OpenCart admin backend, do the following steps:
 <br>
     
     Step 5) Click the "Store" tab
+    
 <br>
 
     Step 6) Choose the template you uploaded from the "Template" drop-down box and 
