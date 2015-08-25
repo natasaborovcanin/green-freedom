@@ -96,7 +96,7 @@
     padding: $spacing-unit 0;
 }
 
-.footer-heading {
+/*.footer-heading {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
 }
@@ -146,7 +146,7 @@
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
-}
+}*/
 
 @include media-query($on-palm) {
     .footer-col {
@@ -174,7 +174,7 @@
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit;
+        margin-bottom: $spacing-unit / 3;
     }
 }
 
