@@ -1,0 +1,31 @@
+{
+  "name": "Green Freedom- Opencart theme framework documentation",
+  "version": "0.0.1",
+  "homepage": "https://github.com/natasaborovcanin/green-freedom",
+  "authors": [
+    "peroperje <el.pionir@gmail.com>"
+  ],
+  "description": "Green freedom is opencart theme framework",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "OpenCart",
+    "Theme",
+    "less",
+    "framework",
+    "documentation"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5"
+  }
+}
