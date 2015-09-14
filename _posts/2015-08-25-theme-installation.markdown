@@ -72,11 +72,16 @@ In the OpenCart admin backend, do the following steps:
 
 **That's it. You have successfully activated your new OpenCart template.**
 
-## For settings like in demo store
+## Setup your installation similar to the demo
+If you want to have site like our demo site do following
 
+### Full width slideshow on homepage
+
+    
 1) Create slideshow images and banner images in settings/banners
     ( For slideshow full with behind header use images with width 1348px.
     For banner images on homepage use images with width 1140px ,or download images from demo store)
+    
 2)Install Slideshow Full Width
     You will get message that will be overwritten file "catalog/view/theme/food/template/module/slideShowFullWidth.tpl"
     	Click on continue button
