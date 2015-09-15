@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Theme installation"
+title:  "Instruction of Theme Installation"
 author: "panforest.net"
 date:   2015-08-25 07:55:57
 meta: "Instruction based on steps how install green freedom default theme trough OpenCart extensions installer and(or) manual installation"
@@ -77,6 +77,76 @@ If you want to have site like our demo site do following
 
 ### Full width slideshow on homepage
 
+From downloaded packages find and install "Bonus Extension - Slideshow Full Width". 
+
+_Note for installation : Just unzip `full_width_sideshow.zip` and follow installation instruction in `install_extension_instruction.txt`_
+
+    1) Open Settings->Design->Banners and create new banner 
+      ( Recommended width of images are 1348px)
+      
+<br>
+ 
+    2) Open Modules create Slideshow Full Width.
+    Recommended settings : 
+                Width : 1348 , 
+                Height : 560, 
+                Show slider defined style: On // it will append `.full-width-slide` css class to wrapped div so you can add 
+    custom css rules for that class
+    
+<br>
+
+    3) Open Settings->Design-Layout->Homepage and add modules Slideshow full with > your slideshow full name, position : content top, sort order: 1
+    
+ Property name | Width | Height    
+ ------------- | ----- | ------    
+Category Image Size | 80 | 80 
+
+Product Image Thumb Size
+
+380
+
+380
+Product Image Popup Size
+
+500
+
+500
+Product Image List Size
+
+380
+
+380
+Additional Product Image Size
+
+74
+
+74
+Related Product Image Size
+
+380
+
+380
+Compare Image Size
+
+90
+
+90
+Wish List Image Size
+
+47
+
+47
+Cart Image Size
+
+47
+
+47
+Store Image Size
+
+268
+
+
+-------------------------------
     
 1) Create slideshow images and banner images in settings/banners
     ( For slideshow full with behind header use images with width 1348px.
