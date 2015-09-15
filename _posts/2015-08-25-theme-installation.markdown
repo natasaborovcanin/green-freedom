@@ -97,53 +97,61 @@ _Note for installation : Just unzip `full_width_sideshow.zip` and follow install
 
     3) Open Settings->Design-Layout->Homepage and add modules Slideshow full with > your slideshow full name, position : content top, sort order: 1
     
- Property name | Width | Height    
- ------------- | ----- | ------    
-Category Image Size | 80 | 80 
 
-Product Image Thumb Size
+### Recommended settings of images on store level
 
-380
+    Open Admin panel -> Stores -> Settings and click on edit button 
 
-380
-Product Image Popup Size
+<br>
+    
+    Open Image tab and enter values below 
 
-500
+    
+    
 
-500
-Product Image List Size
+|--- 
+|
+| Name  | Width | Height  
+|-:|:-:|:-:|:-:
+|--- 
+|  ------------------------------ | --------------- |----------------------
+| Category Image Size | 80 | 80  
+|--- 
+| 
+| Product Image Thumb Size | 380 | 380
+|--- 
+|   
+| Product Image Popup Size | 500 | 500
+|--- 
+|   
+| Product Image List Size | 380 | 380
+|--- 
+|   
+| Additional Product Image Size | 74 | 74 
+|--- 
+|   
+| Related Product Image Size | 380 | 380 
+|--- 
+|   
+| Compare Image Size | 90 | 90 
+|--- 
+|   
+| Wish List Image Size | 47 | 47 
+|--- 
+|   
+| Cart Image Size | 47 | 47
+|--- 
+|   
+| Store Image Size | 268 | 50 
+   
 
-380
 
-380
-Additional Product Image Size
 
-74
 
-74
-Related Product Image Size
 
-380
 
-380
-Compare Image Size
 
-90
 
-90
-Wish List Image Size
-
-47
-
-47
-Cart Image Size
-
-47
-
-47
-Store Image Size
-
-268
 
 
 -------------------------------
