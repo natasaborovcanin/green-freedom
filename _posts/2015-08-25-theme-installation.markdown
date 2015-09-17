@@ -7,9 +7,15 @@ meta: "Instruction based on steps how install green freedom default theme trough
 weight: 1
 package: "less-theme"
 categories: Installation
+submenu:
+  - { hook: "install-theme-through-opencart-the-extension-installer--brrecommended",       title: "Install theme through OpenCart the extension installer  " }
+  - { hook: "theme-manual-installation", title: "Theme Manual installation" }
+  - { hook: "if-you-have-fresh-installation-of-opencart", title: "Setup your installation similar to the demo (For fresh installation of OpenCart)" }
+  - { hook: "if-you-have-installation-of-opencart-with-own-data", title: "Setup your installation similar to the demo (For installation of OpenCart with custom data)" }
+  
 ---
 
-### Install theme with OpenCart the extension installer  <br>(recommended)
+### Install theme through OpenCart the extension installer  <br>(recommended)
 
 
 In the OpenCart admin backend, do the following steps:
@@ -44,7 +50,7 @@ In the OpenCart admin backend, do the following steps:
 **That's it. You have successfully activated your new OpenCart template.**
 
 
-## Manual installation 
+## Theme Manual installation 
 
     Step 1) Find {{ page.package }}.ocmod.zip  in downloaded package.
       
@@ -72,10 +78,66 @@ In the OpenCart admin backend, do the following steps:
 
 **That's it. You have successfully activated your new OpenCart template.**
 
-## Setup your installation similar to the demo
-If you want to have site like our demo site do following
+# Setup your installation similar to the demo
 
-### Full width slideshow on homepage
+--------------------------------------
+
+
+### If you have fresh installation of OpenCart
+
+----------------------------------
+
+This is quickly way to install our demo site on your server . 
+This is recommended for shop owners who have fresh installation of Opencart. 
+
+___Important Note__: Of course , you can use this method if you have store with custom data but keep in mind that data will be replaced_
+ 
+    1) Install green freedom default theme
+    
+You can  Install theme through [OpenCart the extension installer (recommended)](#install-theme-through-opencart-the-extension-installer--brrecommended) or [manually](#theme-manual-installation)   
+
+
+<br>
+
+    2) Install helper extension "Bonus Extension - Slideshow Full Width". 
+
+You can find the installation instructions in `full_width_sideshow.zip` file      
+
+<br>
+ 
+    3) Install helper  extension "Bonus Extension - Full Image Manager". 
+
+You can find the installation instructions in `raim2.zip` file
+
+<br>
+
+    4) Copy the all sample images to your server. Path of images should be same as in sample package
+     
+There are `sample-images-banners.zip` , `sample-images-manufacturer.zip` and `sample-images- products.zip` package of the sample images. Copy all of them to your server.
+You can install them  through OpenCart the extension installer or manually. if you want install manually, keep path of images same as in the sample packages .
+
+<br>
+
+    5) Open Home -> Backup & Restore in your admin panel and choose "demo-sample.sql" file from package. Then click on  "Restore" button ( right corner of page )
+    
+It will set  demo data in your database. It will also set new admin login details ( username: demo, password: demo ), so if you want change it open Home -> Users and edit data for demo user    
+ 
+__That is all.__ 
+
+
+--------------------------------
+ 
+ 
+### If you have installation of OpenCart with own data 
+
+----------------------------------
+
+This is recommended for shop owners who do not want to lose already entered data
+
+---------------------------------
+
+
+#### Full width slideshow on homepage
 
 From downloaded packages find and install "Bonus Extension - Slideshow Full Width". 
 
@@ -98,16 +160,16 @@ _Note for installation : Just unzip `full_width_sideshow.zip` and follow install
     3) Open Settings->Design-Layout->Homepage and add modules Slideshow full with > your slideshow full name, position : content top, sort order: 1
     
 
-### Recommended settings of images on store level
+
+#### Recommended settings of images on store level
 
     Open Admin panel -> Stores -> Settings and click on edit button 
 
 <br>
     
-    Open Image tab and enter values below 
+    Open Image tab and enter values below : 
 
-    
-    
+
 
 |--- 
 |
@@ -143,70 +205,3 @@ _Note for installation : Just unzip `full_width_sideshow.zip` and follow install
 |--- 
 |   
 | Store Image Size | 268 | 50 
-   
-
-
-
-
-
-
-
-
-
-
--------------------------------
-    
-1) Create slideshow images and banner images in settings/banners
-    ( For slideshow full with behind header use images with width 1348px.
-    For banner images on homepage use images with width 1140px ,or download images from demo store)
-    
-2)Install Slideshow Full Width
-    You will get message that will be overwritten file "catalog/view/theme/food/template/module/slideShowFullWidth.tpl"
-    	Click on continue button
-    ( In modules/Slideshow Full Width chose banner which you created for slideshow,
-     we put width 1348px and height you need.
-    select *Show slider defined style / ON*
-    (This is option which puts slideshow behind header in this theme. Slideshow Full Width always have first position in page layout.
-    It's been used on home page.If you chose option /OF it will be displayed default Slideshow Full Width below header)
-    Enable it and save it
-3)Install two banners from modules/banner, put them related banner to display
-    (In demo store with of banners is 1140) Enable it and save it
-4)Install latest and featured module from module, add product to display
-  ( use limit:4, wdth:390, height:390, if you using demo product images)Enable it and save it
-5)Go to settings/design/layout/homepage
-    add modules
-    Slideshow full with>your name, position: content top, sort order: 1
-    Banner>your name, position: content top, sort order: 2
-    Latest>your name, position: content top, sort order: 3
-    Banner>your name, position: content top, sort order: 4
-    Featured>your name, position: content top, sort order: 5
-    Carousel>carousel-home page, position: content top, sort order: 6
-    save it.
-    That's it!
-
-
-
-
-
-
-
-
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
-
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help

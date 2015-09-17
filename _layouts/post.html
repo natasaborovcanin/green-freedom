@@ -1,6 +1,17 @@
 ---
 layout: default
 ---
+
+{% if page.submenu %}
+<h3>Chapter Contents</h3>
+<ul>
+  {% for item in page.submenu %}
+
+  <li><a href="#{{ item.hook }}">{{ item.title }}</a></li>
+  {% endfor %}
+</ul>
+{% endif %}
+
 <div class="post">
 
   <header class="post-header">
