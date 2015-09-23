@@ -19,7 +19,7 @@ __file name : `less-theme.ocmod.zip`__
  
 --------------
 
-####Green Freedom Framework - For front end developers
+####Green Freedom Framework - For frontend developers
 __file name : `framework.zip`__
 
 `framework.zip`  contains grunt,html, js, css and less files.  It will help developers to modify the default theme or even create new one
