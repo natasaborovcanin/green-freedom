@@ -89,10 +89,75 @@ We have kept the default tpl files and css attributes. Here, you can change it
 ------------------------------
 
 __Note :__ 
- Grunt server task provides detection of every changes on the less, js and tpl files . Your browser will be synchronized  
+ <a href="{{ '/grunt/2015/08/25/work-with-base-grunt-task.html' | prepend: site.baseurl }}">Grunt server</a> task provides detection of every changes on the less, js and tpl files . 
+ Your browser will be synchronized automatically when you change those files. 
 
 
 ### Settings of the framework for new theme
 
 You have to have <a href="{{ '/installation/2015/08/25/framework-installation.html' | prepend: site.baseurl }}" target="_blanko">installed framework</a>
+
+In root of your project you will find `package.json` file . At the end of file you will find grunt settings :
+ 
+        ...
+                    
+        "boostrapPath": "bower_components/bootstrap/",
+        "frameworkPath": "upload/catalog/view/assets/greenfreedom/",
+        "themeFolder": "less-theme",
+        "themeImgFolder": "less",
+        "browserSyncProxy": "http://localhost/ocTest/upload/index.php"
+          
+<br>
+
+__boostrapPath__
+
+_path of boostrap. Keep it same as is it_
+
+__frameworkPath__
+
+_path to less,html-template and js files of frameworks. - You will change it when you want create new theme ( [see example](#exampl-of-new-setup))_
+
+__themeFolder__
+
+_Name of your theme folder. You will change it when you want create new theme ( [see example](#exampl-of-new-setup))_
+
+__themeImgFolder__
+
+_Name of images folder ( Good practice is to keep all images of a theme in one folder) -You will change it when you want create new theme ( [see example](#exampl-of-new-setup))_
+
+<hr>
+
+####Exampl of new setup
+
+For example , we want create new theme for books shop .
+
+__Step 1__ 
+
+Create folder `books` ( you can call it how want) in `upload/catalog/view/theme/`
+
+__Step 2__
+ 
+Copy all folders and files from `upload/catalog/view/theme/less-theme/` to your new folder `upload/catalog/view/theme/books`
+
+<hr>
+_Now you have  necessary html ( .tpl ) files_
+<hr>  
+  
+__Step 3__
+
+Create folder `books-framework` ( you can call it how want) in `upload/catalog/view/assets/`
+
+__Step 4__
+ 
+Copy all folders and files from `upload/catalog/view/assets/greenfreedom/` to your new folder `upload/catalog/view/assets/books-framework/`
+
+<hr>
+_Now you have  necessary frameworks  files_
+<hr>  
+  
+    
+
+
+
+ 
 
